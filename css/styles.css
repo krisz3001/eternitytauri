@@ -14,3 +14,6 @@ div{
 	border-radius: 10px 10px 10px 10px;
 	background-size: auto;
 }
+h1,h2{
+	opacity: 1;
+}
