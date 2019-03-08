@@ -1,4 +1,13 @@
 body{
-	background: url('img/background.jpg');
+	background-image: url('img/background.jpg');
 	background-repeat: no-repeat;
+}
+#container{
+	width: 500px;
+	opacity: 0.5;
+	margin: 0 auto;
+}
+h1,h2{
+	color: white;
+	outline: black 2px;
 }
