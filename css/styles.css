@@ -9,12 +9,34 @@ body{
 	margin: 0 auto;
 	height: 100%; 
 }
-#container{
-	background-color: rgba(255, 255, 255, 0.5);
-	width: 600px;
+.container{
+	background-color: rgba(255, 255, 255, 0.75);
+	max-width: 800px;
 	margin: 0 auto;
 	text-align: center;
 	border-radius: 15px 15px 15px 15px;
-	background-size: auto;
-	padding: 5px 5px 5px 5px;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+}
+li {
+  display: inline;
+}
+li a {
+  display: inline-block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-decoration: none;
+  font-family: arial;
+  font-weight: bold;
+  font-size: 20px;
+}
+li a:hover{
+	color: white;
+	background-color: #333;
 }
