@@ -1,36 +1,33 @@
 html{
 	background-color: black;
-	height: 100%; 
 }
 body{
 	background-image: url("https://eternitytauri.tk/img/background.png");
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-attachment: fixed;
 	margin: 0 auto;
-	height: 100%; 
 }
 .container{
 	background-color: rgba(255, 255, 255, 0.75);
-	width: 800px;
-	margin: 0 auto;
+	margin: 0;
 	text-align: center;
 	border-radius: 15px 15px 15px 15px;
+	max-width: 800px;
 }
-#menu{
+.menu{
 	list-style-type: none;
-	display: block;
 	width: 100%;
-	position: fixed;
 	top: 0;
 	background-color: rgba(255, 255, 255, 0.75);
 	margin: 0;
 	padding: 0;
+	overflow: hidden;
 }
-#menu li{
+.menu li{
 	float: left;
 	border-right: 1px black solid;
 }
-#menu li a{
+.menu li a{
 	display: block;
 	text-decoration: none;
 	font-size: 30px;
@@ -38,14 +35,20 @@ body{
 	font-weight: bold;
 	padding: 10px;
 }
-#menu li a:not(.active){
+.menu li a:not(.active){
 	color: black;
 }
-#menu li a:hover{
+.menu li a:hover{
 	color: white;
 	background-color: #333;
 }
 .active{
 	color: white;
 	background-color: #333;
+}
+@media screen and (max-width: 700px){
+	ul.menu li {float: none; border-right: none; text-align: center;}
+}
+@media only screen and (max-width: 700px){
+	div{width: screen.width;}
 }
