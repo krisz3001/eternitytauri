@@ -16,27 +16,36 @@ body{
 	text-align: center;
 	border-radius: 15px 15px 15px 15px;
 }
-ul {
-  list-style-type: none;
-  padding: 0;
-  overflow: hidden;
+#menu{
+	list-style-type: none;
+	display: block;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	background-color: rgba(255, 255, 255, 0.75);
+	margin: 0;
+	padding: 0;
 }
-li {
-  display: inline;
+#menu li{
+	float: left;
+	border-right: 1px black solid;
 }
-li a {
-  display: inline-block;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  padding-left: 50px;
-  padding-right: 50px;
-  text-decoration: none;
-  font-family: arial;
-  font-weight: bold;
-  font-size: 20px;
+#menu li a{
+	display: block;
+	text-decoration: none;
+	font-size: 30px;
+	font-family: arial;
+	font-weight: bold;
+	padding: 10px;
 }
-li a:hover{
+#menu li a:not(.active){
+	color: black;
+}
+#menu li a:hover{
+	color: white;
+	background-color: #333;
+}
+.active{
 	color: white;
 	background-color: #333;
 }
