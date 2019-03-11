@@ -12,19 +12,20 @@ body{
 	text-align: center;
 	border-radius: 15px 15px 15px 15px;
 	max-width: 800px;
+	padding: 0;
 }
 .menu{
 	list-style-type: none;
-	width: 100%;
-	top: 0;
 	background-color: rgba(255, 255, 255, 0.75);
-	margin: 0;
-	padding: 0;
+	width: 800px;
+	border-radius: 15px 15px 15px 15px;
+	padding-inline-start: 0;
 	overflow: hidden;
 }
 .menu li{
-	float: left;
-	border-right: 1px black solid;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
 }
 .menu li a{
 	display: block;
@@ -33,6 +34,7 @@ body{
 	font-family: arial;
 	font-weight: bold;
 	padding: 10px;
+	margin: 0;
 }
 .menu li a:not(.active){
 	color: black;
@@ -46,7 +48,7 @@ body{
 	background-color: #333;
 }
 @media screen and (max-width: 700px){
-	ul.menu li {float: none; border-right: none; text-align: center;}
+	ul.menu li {float: none; text-align: center;}
 }
 @media only screen and (max-width: 700px){
 	div{width: screen.width;}
