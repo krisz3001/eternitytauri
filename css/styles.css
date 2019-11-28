@@ -5,14 +5,13 @@ html{
 }
 body{
 	margin: 0 auto;
+	background-color: black;
+	background: url("https://eternitytauri.tk/img/background.jpg") no-repeat center center fixed;
+	background-size: cover;
 }
-.container{
+.container, .col{
 	background-color: rgba(255, 255, 255, 0.75);
-	margin: 0 auto;
-	text-align: center;
 	border-radius: 15px 15px 15px 15px;
-	max-width: 800px;
-	padding: 0;
 }
 #menu{
 	width: 100%;
@@ -51,6 +50,7 @@ body{
 #menu ul li a:hover{
 	color: white;
 	background-color: #333;
+	border-color: #333;
 }
 .active{
 	color: white;
@@ -60,6 +60,4 @@ body{
 	#menu ul li {float: none; text-align: center; width: screen.width;}
 	#menu ul {width: screen.width;}
 }
-@media only screen and (max-width: 700px){
-	div{width: screen.width;}
-}
+
