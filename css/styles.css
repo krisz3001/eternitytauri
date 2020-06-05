@@ -1,12 +1,12 @@
 html{
 	background-color: black;
-	background: url("img/background.jpg") no-repeat center center fixed;
+	background: url("/taco/img/background.jpg") no-repeat center center fixed;
 	background-size: cover;
 }
 body{
 	margin: 0 auto;
 	background-color: black;
-	background: url("img/background.jpg") no-repeat center center fixed;
+	background: url("/taco/img/background.jpg") no-repeat center center fixed;
 	background-size: cover;
 }
 .container, .col{
